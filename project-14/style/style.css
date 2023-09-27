@@ -1,0 +1,139 @@
+/* Reset default box sizing and remove margin/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* Improve border style and remove relative positioning */
+div {
+  border: 5px outset rgb(71, 10, 10);
+}
+
+/* Style the navigation links */
+.nav-pills .nav-link {
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #555;
+}
+
+/* Style the slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Style the slideshow images */
+.mySlides {
+  display: none;
+}
+
+/* Style the slideshow buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+/* Style the dots/bullets */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+  background-color: #555;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Style form elements */
+.form-control,
+.form-select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #888;
+}
+
+.form-btns {
+  margin-top: 10px;
+}
+
+.submit {
+  background-color: #555;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #777;
+}
